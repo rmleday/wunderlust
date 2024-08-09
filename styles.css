@@ -72,7 +72,7 @@ table {
    header{
      display: grid;
      grid-template-columns: repeat(4,2fr);
-     grid-template-rows: 3;
+     grid-template-rows: auto;
      padding: 5px;
      background: linear-gradient(to bottom, #55BCD5, #FFFFFF);
    
@@ -106,7 +106,7 @@ table {
     background-color:#F6D64A;
     color:#222222;
     border-radius: 5px;
-    visibility: none;
+    visibility: hidden;
   }
   
   #menu-toggle ul {
@@ -195,7 +195,7 @@ img, picture {
    
    #plan section{
      display: grid;
-     grid-template-columns: 1;
+     grid-template-columns: 1fr;
      padding: 40px;
      margin: 30px;
      border: 3px solid #FFFFFF;
@@ -217,7 +217,7 @@ img, picture {
    }
    #testimonials img{
      display: grid;
-   grid-template-columns: 1;
+   grid-template-columns: 1fr;
    margin: auto;
      justify-content: center;
    }
@@ -246,8 +246,8 @@ img, picture {
        background-color: #499BD2;
      
      display: grid;
-     grid-template-columns: 3;
-     grid-template-rows: 3;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
      padding: 20px;
    }
    #about h3{
@@ -262,7 +262,7 @@ img, picture {
      grid-column-start:1;
      grid-column-end:2;
    }
-   #about img:second-of-type{
+   #about img:nth-of-type(2){
      display: grid;
      grid-row-start:2;
      grid-column:2/-1;
@@ -477,7 +477,7 @@ margin: 10px 0;
     display: flex;
     
     
-  } */
+  } 
   header p{
     padding: 20px;
   }
@@ -496,7 +496,7 @@ margin: 10px 0;
    #img-grid img{
     display: grid;
     grid-template-columns: 1fr;
-  grid-template-rows: 3;
+  grid-template-rows: auto;
   gap: 5px;
     width: 100%;
   }
